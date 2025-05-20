@@ -1,0 +1,139 @@
+﻿,Category,Item Name,Description,Price
+0,Salads,Salad, Classic Caesar,75 L.E
+1,Salads,Chicken Caesar,,140 L.E
+2,Salads,Mixed Salad,,75 L.E
+3,Salads,Greek salad,,110 L.E
+4,Salads,Coleslaw,,50 L.E
+5,Salads,Pickles,,25 L.E
+6,Sandwiches,Hot Sandwiches, Chicken Fillet Pane,125 L.E
+7,Sandwiches,Chicken Champion,,125 L.E
+8,Sandwiches,Chicken BBQ,,135 L.E
+9,Sandwiches,Shrimp Pane,,175 L.E
+10,Sandwiches,Hot dog,,45 L.E
+11,Sandwiches,Chicken Fajitas,,125 L.E
+12,Sandwiches,Shish Taouk,,110 L.E
+13,Sandwiches,Grilled Kofta,,125 L.E
+14,Sandwiches,Cold Sandwiches, Viennoise Roast Beef,125 L.E
+15,Sandwiches,Roast Turkey,,125 L.E
+16,Sandwiches,Tongue,,135 L.E
+17,Sandwiches,Tuna,,190 L.E
+18,Sandwiches,Brown Bread, Roast Beef Brown Bread,160 L.E
+19,Sandwiches,Turkey Brown Bread,,145 L.E
+20,Sandwiches,Tuna salad Brown Bread,,150 L.E
+21,Sandwiches,Navitte, Brown Navitte,175 L.E
+22,Sandwiches,white Navitte,,175 L.E
+23,Sandwiches,Toast (White Or Brown), Club Sandwich,135 L.E
+24,Sandwiches,Toast Club Brown,,140 L.E
+25,Sandwiches,Roast Beef Brown Toast,,130 L.E
+26,Sandwiches,Turkey Brown Toast,,130 L.E
+27,Sandwiches,Tuna Salad Brown Toast,,150 L.E
+28,Sandwiches,Saumon Fumé, Saumon Fumé (white Bread),240 L.E
+29,Sandwiches,Saumon Fumé (Brown Bread),,275 L.E
+30,Sandwiches,Navitte Saumon Fumé (white Or Brown),,235 L.E
+31,Sandwiches,Saumon Fumé White Toast (2 Layers),,175 L.E
+32,Sandwiches,Saumon Fumé Brown Toast (2 Layers),,175 L.E
+33,Hot Meals,Hot Meals, Veal Escalope Pane With French Fries,350 L.E
+34,Hot Meals,Grilled kofta With French Fries,,245 L.E
+35,Hot Meals,Shish Tawook With French Fries,,225 L.E
+36,Hot Meals,Chicken Fillet Pane With French Fries,,225 L.E
+37,Hot Meals,Mixed Grill With French Fries,,250 L.E
+38,Side Order,Side Order, French fries,55 L.E
+39,Side Order,Soft Drink (Cans),,40 L.E
+40,Side Order,Schweppes,,40 L.E
+41,Side Order,Fayrouz,,40 L.E
+42,Side Order,Birell,,40 L.E
+43,Side Order,Dash,,30 L.E
+44,Side Order,Mineral water,,00 L.E
+45,Ice Cream,Ice Cream,,45 L.E
+46,Desserts,Desserts, Babaz,60 L.E
+47,Desserts,Ganache,,60 L.E
+48,Desserts,Royal,,60 L.E
+49,Desserts,Eclair,,60 L.E
+50,Desserts,Mille feuille,,60 L.E
+51,Desserts,Cheese Cake,,75 L.E
+52,Bakery,Bakery, English cake (3 slices),55 L.E
+53,Bakery,Raisin Danish,,50 L.E
+54,Bakery,Fruit Danish,,50 L.E
+55,Bakery,Pate with Cheddar,,55 L.E
+56,Bakery,Pate with white cheese & Sesame,,50 L.E
+57,Bakery,Croissant with Cheddar,,50 L.E
+58,Bakery,Croissant,,40 L.E
+59,Juices & Cocktails,Juices & Cocktails,,85 L.E
+60,Juices & Cocktails,Raspberry, Passion Fruit Kiwi Mango Strawberry Lemon Squash,85 L.E
+61,Juices & Cocktails,( With favorite flavors ), Passion Fruit Raspberry Strawberry,85 L.E
+62,Juices & Cocktails,Hazelnut Chocolate, Caramel Dark Chocolate,40 L.E
+63,Hot Drinks,Hot Drinks, Espresso :,00 L.E
+64,Hot Drinks,Espresso Macchiato :,,00 L.E
+65,Hot Drinks,Cappuccino :,,85 L.E
+66,Hot Drinks,Café latte :,,85 L.E
+67,Hot Drinks,Café Mocha :,,85 L.E
+68,Hot Drinks,Hot Chocolate :,,65 L.E
+69,Salads,Salad, Classic Caesar,75 L.E
+70,Salads,Chicken Caesar,,140 L.E
+71,Salads,Mixed Salad,,75 L.E
+72,Salads,Greek salad,,110 L.E
+73,Salads,Coleslaw,,50 L.E
+74,Salads,Pickles,,25 L.E
+75,Sandwiches,Hot Sandwiches, Chicken Fillet Pane,125 L.E
+76,Sandwiches,Chicken Champion,,125 L.E
+77,Sandwiches,Chicken BBQ,,135 L.E
+78,Sandwiches,Shrimp Pane,,175 L.E
+79,Sandwiches,Hot dog,,45 L.E
+80,Sandwiches,Chicken Fajitas,,125 L.E
+81,Sandwiches,Shish Taouk,,110 L.E
+82,Sandwiches,Grilled Kofta,,125 L.E
+83,Sandwiches,Cold Sandwiches, Viennoise Roast Beef,125 L.E
+84,Sandwiches,Roast Turkey,,125 L.E
+85,Sandwiches,Tongue,,135 L.E
+86,Sandwiches,Tuna,,190 L.E
+87,Sandwiches,Brown Bread, Roast Beef Brown Bread,160 L.E
+88,Sandwiches,Turkey Brown Bread,,145 L.E
+89,Sandwiches,Tuna salad Brown Bread,,150 L.E
+90,Sandwiches,Navitte, Brown Navitte,175 L.E
+91,Sandwiches,white Navitte,,175 L.E
+92,Sandwiches,Toast (White Or Brown), Club Sandwich,135 L.E
+93,Sandwiches,Toast Club Brown,,140 L.E
+94,Sandwiches,Roast Beef Brown Toast,,130 L.E
+95,Sandwiches,Turkey Brown Toast,,130 L.E
+96,Sandwiches,Tuna Salad Brown Toast,,150 L.E
+97,Sandwiches,Saumon Fumé, Saumon Fumé (white Bread),275 L.E
+98,Sandwiches,Saumon Fumé (Brown Bread),,275 L.E
+99,Sandwiches,Navitte Saumon Fumé (white Or Brown),,235 L.E
+100,Sandwiches,Saumon Fumé White Toast (2Layers),,175 L.E
+101,Sandwiches,Saumon Fumé Brown Toast (2Layers),,175 L.E
+102,Hot Meals,Hot Meals, Veal Escalope Pane With French Fries,350 L.E
+103,Hot Meals,Grilled kofta With French Fries,,145 L.E
+104,Hot Meals,Shish Tawook With French Fries,,225 L.E
+105,Hot Meals,Chicken Fillet Pane With French Fries,,225 L.E
+106,Hot Meals,Mixed Grill With French Fries,,350 L.E
+107,Side Order,Side Order, French fries,55 L.E
+108,Side Order,Soft Drink (Cans),,40 L.E
+109,Side Order,Schweppes,,40 L.E
+110,Side Order,Fayrouz,,40 L.E
+111,Side Order,Birell,,40 L.E
+112,Side Order,Dash,,30 L.E
+113,Side Order,Mineral water,,00 L.E
+114,Ice Cream,Ice Cream,,45 L.E
+115,Desserts,Desserts, Eclair,60 L.E
+116,Desserts,Royal,,60 L.E
+117,Desserts,Mille feuille,,60 L.E
+118,Desserts,Ganache,,60 L.E
+119,Desserts,Babaz,,60 L.E
+120,Desserts,Cheese Cake,,75 L.E
+121,Bakery,Bakery, Croissant,40 L.E
+122,Bakery,Croissant with Cheddar,,50 L.E
+123,Bakery,Pate with white cheese & Sesame,,50 L.E
+124,Bakery,Pate with Cheddar,,55 L.E
+125,Bakery,Fruit Danish,,50 L.E
+126,Bakery,Raisin Danish,,50 L.E
+127,Bakery,English cake (3 slices),,55 L.E
+128,Juices & Cocktails,Juices & Cocktails,,85 L.E
+129,Juices & Cocktails,Raspberry, Passion Fruit Kiwi Mango Strawberry Lemon Squash,85 L.E
+130,Juices & Cocktails,( With favorite flavors ), Passion Fruit Raspberry Strawberry,85 L.E
+131,Juices & Cocktails,Hazelnut Chocolate, Caramel Dark Chocolate,40 L.E
+132,Hot Drinks,Hot Drinks, Espresso :,00 L.E
+133,Hot Drinks,Espresso Macchiato :,,00 L.E
+134,Hot Drinks,Cappuccino :,,85 L.E
+135,Hot Drinks,Café latte :,,85 L.E
+136,Hot Drinks,Café Mocha :,,85 L.E
+137,Hot Drinks,Hot Chocolate :,,65 L.E
