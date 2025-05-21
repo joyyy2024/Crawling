@@ -1,4 +1,11 @@
 streamlit
 requests
-beautifulsoup4
+urllib.robotparser (part of standard library)
+requests.adapters (part of requests)
+bs4 (BeautifulSoup)
+re (part of standard library)
+time (part of standard library)
 pandas
+urllib.parse (part of standard library)
+selenium
+webdriver_manager
