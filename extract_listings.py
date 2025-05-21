@@ -8,12 +8,6 @@ import time
 import pandas as pd
 from urllib.parse import urlparse
 
-# Optional: Selenium (only if JS-heavy pages)
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
-
 
 def get_session_with_retries(retries=3, backoff_factor=1.0, status_forcelist=(500, 502, 503, 504)):
     session = requests.Session()
@@ -118,25 +112,16 @@ def scrape_menu(base_url, session, use_selenium=False):
     rows = []
 
     def get_soup(url):
-        if use_selenium:
-            options = Options()
-            options.add_argument('--headless=new')
-            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-            driver.get(url)
-            time.sleep(3)  # wait for JS to load
-            html = driver.page_source
-            driver.quit()
-            return BeautifulSoup(html, "html.parser")
-        else:
-            try:
-                response = session.get(url, timeout=10)
-                if response.status_code != 200:
-                    st.warning(f"Failed to load {url} - Status: {response.status_code}")
-                    return None
-                return BeautifulSoup(response.content, "html.parser")
-            except requests.RequestException as e:
-                st.error(f"Error fetching page: {e}")
+        # Selenium removed, only requests + BS4
+        try:
+            response = session.get(url, timeout=10)
+            if response.status_code != 200:
+                st.warning(f"Failed to load {url} - Status: {response.status_code}")
                 return None
+            return BeautifulSoup(response.content, "html.parser")
+        except requests.RequestException as e:
+            st.error(f"Error fetching page: {e}")
+            return None
 
     def scrape_page(url):
         soup = get_soup(url)
@@ -262,8 +247,8 @@ def main():
     resp = session.get(menu_url)
     js_heavy = is_javascript_heavy(resp.text)
 
-    # Scrape menu with or without Selenium
-    menu_data = scrape_menu(menu_url, session, use_selenium=js_heavy)
+    # Scrape menu without Selenium
+    menu_data = scrape_menu(menu_url, session, use_selenium=False)
 
     # Display extracted data
     if menu_data:
@@ -274,43 +259,28 @@ def main():
         # Top extracted data summary
         st.subheader("Top Extracted Data Summary")
 
-        # Top categories by number of items
-        top_categories = df['Category'].value_counts().head(5)
-        st.write("Top 5 Categories by number of items:")
-        st.bar_chart(top_categories)
+        # Most frequent categories
+        cat_counts = df["Category"].value_counts().head(5)
+        st.write("Top Categories:")
+        st.bar_chart(cat_counts)
 
-        # Top priced items (clean prices)
-        def price_to_float(p):
-            try:
-                return float(re.search(r'\d+', p).group())
-            except:
-                return 0
-
-        df['Price_num'] = df['Price'].apply(price_to_float)
-        top_prices = df.sort_values('Price_num', ascending=False).head(5)[['Item Name', 'Price']]
-        st.write("Top 5 Priced Items:")
-        st.table(top_prices)
-
-    else:
-        st.warning("No menu data extracted.")
+        # Price distribution
+        prices = df["Price"].str.extract(r'(\d+)').dropna().astype(int)
+        if not prices.empty:
+            st.write("Price Distribution")
+            st.bar_chart(prices[0].value_counts())
 
     # Crawlability score
-    st.subheader("Crawlability Score")
     score = calculate_crawlability_score(has_robots, crawl_delays, sitemaps, js_heavy)
-    st.progress(score / 100)
-    st.write(f"Crawlability Score: {score}/100")
+    st.subheader("Crawlability Score")
+    st.progress(score)
+    st.write(f"Score: {score}/100")
 
-    # Recommendations for crawling tools
-    st.subheader("Recommendations for Crawling Tools")
+    # Recommendations
+    st.subheader("Recommended Crawling Tools")
     recs = recommend_crawling_tools(js_heavy, sitemaps)
-    for rec in recs:
-        st.info(rec)
-
-    # Visual Sitemap (if available)
-    if sitemaps:
-        st.subheader("Visual Sitemap URLs")
-        for sitemap in sitemaps:
-            st.markdown(f"[{sitemap}]({sitemap})")
+    for r in recs:
+        st.markdown(f"- {r}")
 
 
 if __name__ == "__main__":
